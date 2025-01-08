@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+/* share color */
+:root{
+    --color :#FD6E0A;
+    --dark2 : #474747;
+    --background-color:#FFF8F3 ;
+    --paragrap :#757575;
+
+}
+
+/* header section */
+.header{
+    background-image:url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-color: var(--background-color);
+}
+/* nav styles starts */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+span{
+    color: var(--color);
+}
+nav ul li{
+    list-style:none;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:var(--dark2) ;
+    margin-right: 51px;
+}
+.nav-btn{
+    color: white;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 18px 35px;
+    font-size: 20px;
+}
+.contact-btn{
+    color: var(--color);
+    border:1px solid var(--color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 18px 35px;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+/* nav styles ends */
+/* banner starts */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    max-width: 580px;   
+}
+.banner-gretings{
+    color: var(--dark2);
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 85px;
+}
+.banner-profile{
+    width: 500px;
+}
+/* banner ends */
+
+/* main style starts */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+/* about section starts */
+.about{
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818 ;
+    text-align: center;
+}
+.section-description{
+    font-size: 18px;
+    color: var(--paragrap) ;
+    text-align: center;
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item-description{
+    font-weight: 600;
+}
+/* about section ends */
+/* skill section starts */
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0 , 0,  0.06 );
+}
+/* skill section ends */
+/* resume section starts */
+.resume-container{
+    display: flex;
+    gap: 24px;
+}
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.experience-description, .experience-sub-title{
+    color: #757575;
+}
+.resume hr{
+    margin: 30px 5px;
+}
+.resume-btn{
+    margin-top: 50px;
+}
+.resume-btn .nav-btn{
+    align-items: center;
+}
+.last-btn{
+    color: white;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 18px 35px;
+    font-size: 20px;
+    margin-left: 450px;
+}
+/* resume section ends */
+/* main style ends */
+/* footer style start */
+footer{
+    background-color: var(--background-color);
+    padding:130px 230px ;
+    display: flex;
+    gap:100px ;
+}
+.footer-column{
+    width: 50%;
+}
+.h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818 ;
+}
+.para{
+    color: var(--paragrap);
+}
+footer input[type="text"], footer input[type="email"], textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--paragrap);
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
+/* footer style end */
